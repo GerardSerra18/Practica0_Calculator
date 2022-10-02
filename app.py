@@ -34,6 +34,4 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0')
     
     
-#ARREGLAR EL ERROR DEL RESULTADO CUANDO EL DENOMINADOR ES 0
-#CREAR UN REPO DE GIT CON EL README Y TOTAL
-#Hacer un pequeño script que instale el requirments y que ejecute la practica entera con dicho servidor
+#La app tiene el unico fallo de ZeroDivisionError, no lo he conseguido arreglar ni hacer que se rediriga a otro html de error 404
