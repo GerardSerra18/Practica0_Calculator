@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="https://livejs.com/live.js"></script> <!--Esto me sirve para no tener que ejecutar cada vez que hacemos un cambio en nuestro codigo-->
+<html >
+<head>
+	<img src="https://cdn.pixabay.com/photo/2021/02/07/19/46/calculator-5992492_960_720.png">
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="background: rgb(42, 105, 255);">
+ <div class="login">
+	<h1>Basic Calculator</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="a" placeholder="FIRST NUMBER" required="REQUIRED" />
+        <input type="text" name="b" placeholder="SECOND NUMBER" required="REQUIRED" />
+        <div class="form-group">
+					<label class="control-label col-xs-3">OPERATION:</label>
+					<div class="col-xs-5">
+						<select class="form-control" name="operation">
+							<option>ADDITION</option>
+							<option>SUBSTRACTION</option>
+							<option>MULTIPLICATION</option>
+							<option>DIVISION</option>
+						</select>
+					</div>
+				</div>
+        <button type="submit" class="submit">Calculate</button>
+
+    </form>
+
+   <br>
+   <br>
+   <p style="padding: 5px; border: 10px solid blue;">Aquesta es la pràctica 0 (opcional) realitzada per Gerard Serra Rodríguez. Consisteix en una simple calculadora que realitza les següents operacions: Suma, Resta, Multiplicació i Divisió</p>
+
+
+ </div>
+</body>
+</html>

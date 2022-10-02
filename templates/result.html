@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="https://livejs.com/live.js"></script> <!--Esto me sirve para no tener que ejecutar cada vez que hacemos un cambio en nuestro codigo-->
+<html >
+<head>
+	<img src="https://cdn.pixabay.com/photo/2021/02/07/19/46/calculator-5992492_960_720.png">
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<style>
+    blockquote {
+        border-left: 2px solid red;
+        background-color: red
+    }
+</style>
+</head>
+<body style="background: rgb(42, 105, 255);">
+ <div class="login">
+	<h1>Basic Calculator</h1>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><legend><h1>YOUR RESULT IS</h1></legend></div>
+            <div class="col-md-4"></div>
+            <label class="control-label col-xs-4" for="result"></label>
+            </div>
+                <blockquote>{{ prediction_text }}</blockquote>
+                <input type="button" onclick="history.back()" name="BACK" value="BACK">
+            </div>
+
+    </body>
+</html>
