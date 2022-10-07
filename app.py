@@ -22,11 +22,13 @@ def predict():
     b = request.form['b']
     operation = str(request.form['operation'])
 
-    result = basic_calculator(a,b,operation)
     try:
-        return render_template('result.html', prediction_text=str(result))
+        result = basic_calculator(a,b,operation)
     except ZeroDivisionError:
-        return render_template('error.html')
+        return render_template('error.html'), 400
+    
+    return render_template('result.html', prediction_text=str(result))
+
 
 
 if __name__ == "__main__":
