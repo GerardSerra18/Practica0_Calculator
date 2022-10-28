@@ -19,5 +19,7 @@ def basic_calculator(a,b,operation):
       result = a / b
     elif operation == "MULTIPLICATION":
       result = a * b
+    elif operation == "MEAN":
+      result = (a + b)/2
       
   return result
